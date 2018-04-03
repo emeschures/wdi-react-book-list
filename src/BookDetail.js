@@ -8,7 +8,7 @@ class BookDetail extends React.Component {
       <div className="Book content">
         <div className="columns">
           <div className="column">
-            <img alt="The Brothers Karamazov" src={`.../@{book.imageLink`} />
+            <img alt={book.title} src={`../${book.imageLink}`} />
           </div>
           <div className="column">
             <h1 className="title is-2">{book.title}</h1>
