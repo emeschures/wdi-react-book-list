@@ -27,6 +27,9 @@ The above two components have static HTML examples that demonstrate how the App 
 - Create links to each book such that when a user clicks on a book from the list, they are taken to `/books/:id` (substitude `:id` with the actual ID of the book being clicked.)
 - Render the `<BookDetail />` component when the user hits `/books/:id` with any book id. You'll need to pass the correct book from the complete list down into the `<BookDetail/>` as a prop!
 - Look through the HTML markup in `<BookDetail />`, notice everything is hard-coded in. You'll want to dynamically render the book details instead.
-- Once you're done, try and make the book list filter work in `<BookList />`. A user should be able to start typing a word, and any books in the list that include that word should be shown, while all other books hidden. **HINT:** check out the array [`filter()` method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter).
+- Once you're done, try and make the book list filter work in `<BookList />`. A user should be able to start typing a word, and any books in the list that include that word should be shown, while all other books hidden. 
+**HINTS:**
+  - You can invoke a function for an input's *onChange* event (every time the input value changes)
+  - check out the array [`filter()` method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter).
 
 ####  Have fun!
