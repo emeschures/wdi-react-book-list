@@ -1,22 +1,24 @@
 import React from 'react'
 
+
 class BookDetail extends React.Component {
   render() {
+    const { book } = this.props
     return (
       <div className="Book content">
         <div className="columns">
           <div className="column">
-            <img alt="The Brothers Karamazov" src="/images/the-brothers-karamazov.jpg" />
+            <img alt="The Brothers Karamazov" src={`.../@{book.imageLink`} />
           </div>
           <div className="column">
-            <h1 className="title is-2">The Brothers Karamazov</h1>
-            <h2 className="title is-3">Fyodor Dostoevsky</h2>
+            <h1 className="title is-2">{book.title}</h1>
+            <h2 className="title is-3">{book.author}</h2>
             <ul>
-              <li>Year: 1880</li>
-              <li>Pages: 824</li>
-              <li>Language: Russian</li>
-              <li>Country: Russia</li>
-              <li><a href="#">Wikipedia</a></li>
+              <li>{book.year}</li>
+              <li>{book.pages}</li>
+              <li>{book.language}</li>
+              <li>{book.country}</li>
+              <li><a href={book.link}>Wikipedia</a></li>
             </ul>
           </div>
         </div>
